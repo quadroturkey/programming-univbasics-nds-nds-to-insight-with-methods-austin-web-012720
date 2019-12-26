@@ -14,9 +14,11 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  results = {}
+results = {}
 director_index = 0
-results["Russo Brothers"] = gross_for_director(nds[director_index])
+
+while director_index < nds[director_index].length 
+  results["Russo Brothers"] = gross_for_director(nds[director_index])
 return results
 end
 
