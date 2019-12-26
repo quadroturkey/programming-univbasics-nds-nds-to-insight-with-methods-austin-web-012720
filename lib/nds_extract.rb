@@ -4,7 +4,7 @@ require 'directors_database'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  pp director_data
+  return director_data
   
 
 end
@@ -16,7 +16,7 @@ end
 def directors_totals(nds)
   results = {}
   
-
+results["test"] = gross_for_director
 return results
 end
 
