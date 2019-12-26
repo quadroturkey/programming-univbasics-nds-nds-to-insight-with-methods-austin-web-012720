@@ -4,7 +4,9 @@ require 'directors_database'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  return director_data[:movies][0][:worldwide_gross]
+  movie_index = 0 
+  movie_len = director_data[:movies][movie_index].length
+  return director_data[:movies][movie_index][:worldwide_gross]
   
 
 end
@@ -16,7 +18,6 @@ end
 def directors_totals(nds)
 results = {}
 director_index = 0
-
 while director_index < nds.length 
   director_name = nds[director_index][:name]
   results[director_name] = gross_for_director(nds[director_index])
