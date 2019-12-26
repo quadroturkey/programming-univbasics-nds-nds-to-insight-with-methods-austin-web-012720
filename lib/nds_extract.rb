@@ -16,7 +16,7 @@ end
 def directors_totals(nds)
   results = {}
 director_index = 0
-results["test"] = gross_for_director(nds[director_index])
+results["Russo Brothers"] = gross_for_director(nds[director_index])
 return results
 end
 
