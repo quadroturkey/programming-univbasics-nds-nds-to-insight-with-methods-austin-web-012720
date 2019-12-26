@@ -15,7 +15,7 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   results = {}
-  director_index
+  
 
 return results
 end
