@@ -18,7 +18,8 @@ results = {}
 director_index = 0
 
 while director_index < nds.length 
-  results["Russo Brothers"] = gross_for_director(nds[director_index])
+  director_name = nds[director_index][:name]
+  results[director_name] = gross_for_director(nds[director_index])
   director_index += 1 
 end
 return results
