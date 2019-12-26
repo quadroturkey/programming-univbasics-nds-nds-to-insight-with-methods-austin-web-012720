@@ -15,8 +15,8 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   results = {}
-  
-results["test"] = gross_for_director(nds)
+director_index = 0
+results["test"] = gross_for_director(nds[director_index])
 return results
 end
 
