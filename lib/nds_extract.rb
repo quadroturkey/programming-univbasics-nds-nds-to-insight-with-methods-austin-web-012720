@@ -16,7 +16,7 @@ end
 def directors_totals(nds)
   results = {}
   
-results["test"] = gross_for_director
+results["test"] = gross_for_director(nds)
 return results
 end
 
