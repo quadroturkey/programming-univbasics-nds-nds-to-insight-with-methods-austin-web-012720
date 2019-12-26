@@ -17,8 +17,10 @@ def directors_totals(nds)
 results = {}
 director_index = 0
 
-while director_index < nds[director_index].length 
+while director_index < nds.length 
   results["Russo Brothers"] = gross_for_director(nds[director_index])
+  director_index += 1 
+end
 return results
 end
 
